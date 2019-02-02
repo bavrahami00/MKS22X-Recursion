@@ -20,4 +20,20 @@ public class recursion {
     }
     return fib(n,two,one+two,time+1);
   }
+  public static ArrayList<Integer> makeAllSums(int n) {
+    if (n < 0) {
+      return makeAllSums(-n);
+    }
+    if (n == 0) {
+      ArrayList<Integer> a = new ArrayList<Integer>();
+      a.add(0);
+      return a;
+    }
+    ArrayList<Integer> b = makeAllSums(n-1);
+    int k = b.size();
+    for (int x = 0; x < k; x++) {
+      b.add(n+b.get(x));
+    }
+    return b;
+  }
 }
