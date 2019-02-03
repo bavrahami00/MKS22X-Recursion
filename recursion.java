@@ -12,6 +12,25 @@ public class recursion {
     System.out.println("fib(3) should be 2: " + recursion.fib(3));
     System.out.println("fib(10) should be 55: " + recursion.fib(10));
     System.out.println("fib(45) should be 1134903170: " + recursion.fib(45));
+    System.out.println("\nTesting makeAllSums");
+    ArrayList<Integer> a = recursion.makeAllSums(0);
+    System.out.println("makeAllSums(0) should be 0: ");
+    for (int x = 0; x < a.size(); x++) {
+      System.out.print(a.get(x)+",");
+    }
+    System.out.println();
+    a = recursion.makeAllSums(3);
+    System.out.println("makeAllSums(3) should be 0-6: ");
+    for (int x = 0; x < a.size(); x++) {
+      System.out.print(a.get(x)+",");
+    }
+    System.out.println();
+    a = recursion.makeAllSums(10);
+    System.out.println("makeAllSums(10) should be 0-55: ");
+    for (int x = 0; x < a.size(); x++) {
+      System.out.print(a.get(x)+",");
+    }
+    System.out.println();
   }
   public static double sqrt(double n) {
     if (n <= 0) {
