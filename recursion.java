@@ -1,5 +1,12 @@
 import java.util.ArrayList;
 public class recursion {
+  public static void main(String[] args) {
+    System.out.println("Testing sqrt");
+    System.out.println("sqrt(0) should be 0: " + recursion.sqrt(0));
+    System.out.println("sqrt(1) should be 1: " + recursion.sqrt(1));
+    System.out.println("sqrt(10) should be ~3.16: " + recursion.sqrt(10));
+    System.out.println("sqrt(100) should be 10: " + recursion.sqrt(100));
+  }
   public static double sqrt(double n) {
     if (n <= 0) {
       return 0;
