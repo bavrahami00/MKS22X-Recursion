@@ -1,11 +1,17 @@
 import java.util.ArrayList;
 public class recursion {
   public static void main(String[] args) {
-    System.out.println("Testing sqrt");
+    System.out.println("\nTesting sqrt");
     System.out.println("sqrt(0) should be 0: " + recursion.sqrt(0));
     System.out.println("sqrt(1) should be 1: " + recursion.sqrt(1));
     System.out.println("sqrt(10) should be ~3.16: " + recursion.sqrt(10));
     System.out.println("sqrt(100) should be 10: " + recursion.sqrt(100));
+    System.out.println("\nTesting fib");
+    System.out.println("fib(0) should be 0: " + recursion.fib(0));
+    System.out.println("fib(1) should be 1: " + recursion.fib(1));
+    System.out.println("fib(3) should be 2: " + recursion.fib(3));
+    System.out.println("fib(10) should be 55: " + recursion.fib(10));
+    System.out.println("fib(45) should be 1134903170: " + recursion.fib(45));
   }
   public static double sqrt(double n) {
     if (n <= 0) {
