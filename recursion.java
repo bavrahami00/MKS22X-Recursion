@@ -38,7 +38,7 @@ public class recursion {
     }
     return guess(n,1);
   }
-  public static double guess(double n, double g) {
+  private static double guess(double n, double g) {
     if ((Math.abs(g*g-n) / n) < 0.000001) {
       return g;
     }
@@ -47,7 +47,7 @@ public class recursion {
   public static int fib(int n) {
     return fib(n,0,1,0);
   }
-  public static int fib(int n, int one, int two, int time) {
+  private static int fib(int n, int one, int two, int time) {
     if (time == n) {
       return one;
     }
