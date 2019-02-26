@@ -32,17 +32,17 @@ public class recursion {
     }
     System.out.println();
   }
-  public static double sqrt(double n) {
+  public static double sqrt(double n, double tol) {
     if (n <= 0) {
       return 0;
     }
-    return guess(n,1);
+    return guess(n,1,tol);
   }
-  private static double guess(double n, double g) {
-    if ((Math.abs(g*g-n) / n) < 0.000001) {
+  private static double guess(double n, double g, double tol) {
+    if ((Math.abs(g*g-n) / n) < tol) {
       return g;
     }
-    return guess(n,(n/g+g)/2);
+    return guess(n,(n/g+g)/2,tol);
   }
   public static int fib(int n) {
     return fib(n,0,1,0);
