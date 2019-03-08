@@ -32,6 +32,9 @@ public class recursion {
     }
     System.out.println();
   }
+  public static double sqrt(double n) {
+    return sqrt(n,0.0001);
+  }
   public static double sqrt(double n, double tol) {
     if (n <= 0) {
       return 0;
